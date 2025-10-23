@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1b1b;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.card {
+    color: white;
+    text-align: center;
+    width: 400px;
+    background: #222222;
+    padding: 30px;
+    max-width: 100%;
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid #0091ca;
+    transition: transform 0.4s ease;
+}
+
+.foto:hover {
+    transform: translateY(-6px);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+}
+
+h3 {
+    color: #0091ca;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+p {
+    font-style: italic;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.links {
+    list-style: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    display: block;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    background: rgb(75, 74, 74);
+    transition: background 0.4s ease;
+    transition: color 0.4s ease;
+    margin-bottom: 15px;
+}
+
+.btn:hover {
+    background: #0091ca;
+    color: #000;
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        /* ocupa toda a largura do celular */
+        padding: 20px;
+        /* menos espaço interno */
+    }
+
+    .foto {
+        width: 90px;
+        height: 90px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 8px 0;
+        font-size: 0.9rem;
+    }
+}
